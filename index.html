@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaky Fruity</title>
+    <link rel="stylesheet" href="styling.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Hello in Malaky Fruity</h1>
+    </header>
+
+    <div id="content">
+        <section id="products">
+            
+            <div class="product">
+                <img src="mm.jpg" alt="كرز">
+                <h3>كرز</h3>
+                <p>الكمية: علبة صغيرة (100 جرام)</p>
+                <p>السعر: <span class="price">5</span> دولار</p>
+                <button onclick="addProductToCart(100)">أضف إلى السلة</button>
+            </div>
+            <div class="product">
+                <img src="ss.jpeg" alt="برتقال">
+                <h3>برتقال</h3>
+                <p>الكمية: كرتونة (12 حبة)</p>
+                <p>السعر: <span class="price">3</span> دولار</p>
+                <button onclick="addProductToCart(101)">أضف إلى السلة</button>
+            </div>
+            <div class="product">
+                <img src="oo.jpg" alt="فراولة">
+                <h3>فراولة</h3>
+                <p>الكمية: علبة صغيرة (250 جرام)</p>
+                <p>السعر: <span class="price">4</span> دولار</p>
+                <button onclick="addProductToCart(102)">أضف إلى السلة</button>
+            </div>
+            <div class="product">
+                <img src="https://www.pexels.com/photo/copy-space-photo-of-yellow-bananas-2872755/" alt="موز">
+                <h3>موز</h3>
+                <p>الكمية: علبة (6 حبات)</p>
+                <p>السعر: <span class="price">6</span> دولار</p>
+                <button onclick="addProductToCart(103)">أضف إلى السلة</button>
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>سلة المشتريات</h2>
+            <div id="cartItems"></div>
+        </section>
+
+        <section id="checkout">
+            <h2>إتمام الشراء</h2>
+            <p id="cartTotal">المجموع الكلي: 0 دولار</p>
+            <input type="number" id="cashReceived" placeholder="أدخل المبلغ المستلم">
+            <button onclick="completePurchase()">إتمام الشراء</button>
+            <p id="receipt"></p>
+        </section>
+    </div>
+</body>
+</html>
